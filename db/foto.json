@@ -1,0 +1,12 @@
+{
+  "1" : {
+  "nome": "Nome del file",
+  "data_creazione": "2022-01-01",
+  "data_modifica": "2022-02-01",
+  "hashtags": [
+  "#mare",
+  "#studioghibli",
+  "#lisp"
+  ]
+}
+}
