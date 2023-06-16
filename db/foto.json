@@ -1,12 +1,44 @@
 {
-  "1" : {
-  "nome": "Nome del file",
-  "data_creazione": "2022-01-01",
-  "data_modifica": "2022-02-01",
-  "hashtags": [
-  "#mare",
-  "#studioghibli",
-  "#lisp"
-  ]
-}
+  "1": {
+    "id_album": "0",
+    "nome": "mare",
+    "hashtags": [
+      "#mare",
+      "#studioghibli",
+      "#lisp"
+    ],
+    "data_creazione": "2022-01-01 12:00:00"
+  },
+  "2": {
+    "id_album": "0",
+    "nome": "luna",
+    "hashtags": [
+      "#luna",
+      "#studioghibli",
+      "#lisp"
+    ],
+    "data_creazione": "2023-06-16T14:42",
+    "data_modifica": "2023-06-16T14:50"
+  },
+  "3": {
+    "id_album": "0",
+    "nome": "spazio",
+    "hashtags": [
+      "#spazio",
+      "#studioghibli",
+      "#lisp"
+    ],
+    "data_creazione": "2023-06-16T14:42",
+    "data_modifica": "2023-06-16T14:50"
+  },
+  "4": {
+    "id_album": "1",
+    "nome": "Star Wars",
+    "hashtags": [
+      "#Luke",
+      "#Skywalker",
+      "#lisp"
+    ],
+    "data_creazione": "2023-06-16T14:51"
+  }
 }

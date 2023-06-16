@@ -2,37 +2,39 @@
   "0": {
     "nome": "Album fotografico",
     "fotografie": [
-      "https://www.zankyou.it/images/mag-card-c/a21/02e5/878/623/-/it/wp-content/uploads/2017/05/luca-bravo-o453m2liufs-unsplash-1.jpg",
-      "https://media-assets.ad-italia.it/photos/60fe88aff488bc675ebf0f34/master/w_1600%2Cc_limit/photo19.jpg",
-      "https://www.sportoutdoor24.it/app/uploads/2015/06/pexels-jaime-reimer-2662116-670x470.jpg"
+      "1",
+      "2",
+      "3"
     ],
     "hashtags": [
       "#mare",
       "#studioghibli",
       "#lisp"
     ],
-    "data_creazione": "2022-01-01 12:00:00"
+    "data_creazione": "2022-01-01 12:00:00",
+    "data_modifica": "2022-01-02 09:30:00"
   },
   "1": {
     "nome": "Album Pazzo",
     "fotografie": [
-      "https://www.zankyou.it/images/mag-card-c/a21/02e5/878/623/-/it/wp-content/uploads/2017/05/luca-bravo-o453m2liufs-unsplash-1.jpg",
-      "https://media-assets.ad-italia.it/photos/60fe88aff488bc675ebf0f34/master/w_1600%2Cc_limit/photo19.jpg",
-      "https://www.sportoutdoor24.it/app/uploads/2015/06/pexels-jaime-reimer-2662116-670x470.jpg"
+      "1",
+      "2",
+      "3"
     ],
     "hashtags": [
       "#mare",
       "#studioghibli",
       "#lisp"
     ],
-    "data_creazione": "2022-01-01 12:00:00"
+    "data_creazione": "2022-01-01 12:00:00",
+    "data_modifica": "2022-01-02 09:30:00"
   },
   "2": {
     "nome": "Album Mare sensazionale",
     "fotografie": [
-      "https://www.zankyou.it/images/mag-card-c/a21/02e5/878/623/-/it/wp-content/uploads/2017/05/luca-bravo-o453m2liufs-unsplash-1.jpg",
-      "https://media-assets.ad-italia.it/photos/60fe88aff488bc675ebf0f34/master/w_1600%2Cc_limit/photo19.jpg",
-      "https://www.sportoutdoor24.it/app/uploads/2015/06/pexels-jaime-reimer-2662116-670x470.jpg"
+      "1",
+      "2",
+      "3"
     ],
     "hashtags": [
       "#mare",
@@ -46,15 +48,16 @@
   "3": {
     "nome": "Album pazzo assurdo",
     "fotografie": [
-      "https://www.zankyou.it/images/mag-card-c/a21/02e5/878/623/-/it/wp-content/uploads/2017/05/luca-bravo-o453m2liufs-unsplash-1.jpg",
-      "https://media-assets.ad-italia.it/photos/60fe88aff488bc675ebf0f34/master/w_1600%2Cc_limit/photo19.jpg",
-      "https://www.sportoutdoor24.it/app/uploads/2015/06/pexels-jaime-reimer-2662116-670x470.jpg"
+      "1",
+      "2",
+      "3"
     ],
     "hashtags": [
       "#mare",
       "#studioghibli",
       "#lisp"
     ],
-    "data_creazione": "2023-06-16T11:58:34"
+    "data_creazione": "2023-06-16T11:58:34",
+    "data_modifica": "2022-01-02 09:30:00"
   }
 }

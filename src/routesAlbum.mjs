@@ -1,8 +1,10 @@
 import fs from "node:fs/promises";
 import album from "../db/album.json" assert { type: "json" };
-import foto from "../db/foto.json" assert { type: "json" };
+import foto from "../db/foto.json" assert { type: 'json' }
 
 let DB_PATH_ALBUM = "./db/album.json";
+let DB_PATH_FOTO = "./db/foto.json";
+
 
 function getCurrentTime() {
   const data = new Date();
@@ -21,9 +23,11 @@ export let nextId = Object.keys(album).reduce(
   0
 );
 
+
 export const allAlbum = (req, res) => {
   res.send(album);
 };
+
 
 export const albumIdName = (req, res) => {
   let albumOnly = [];
@@ -37,6 +41,7 @@ export const albumIdName = (req, res) => {
     message: "Album has not been found",
   }).end();
 };
+
 
 export const albumUpdate = async (req, res) => {
   let updatedAlbum = album[req.params.id];
@@ -54,9 +59,27 @@ export const albumUpdate = async (req, res) => {
   }
 };
 
-export const albumDelete = (req, res) => {
- 
+
+export const albumDelete = async (req, res) => {
+  let delAlbum = album[req.params.id]
+    if (delAlbum) {
+        for (let i = 0; i < delAlbum.fotografie.length; i++) {
+          
+          delete foto[delAlbum.fotografie[i]]
+          await fs.writeFile(DB_PATH_FOTO, JSON.stringify(foto, null, '  '))
+        }
+        delete album[req.params.id]
+        await fs.writeFile(DB_PATH_ALBUM, JSON.stringify(album, null, '  '))
+    
+        res.status(200).send('Album and Photos has been deleted').end()
+        
+    } else {
+        res.status(200).send({
+        data: {}, error: true, message: 'Album has not been found'
+        })
+    }
 };
+
 
 export const albumCreate = async (req, res) => {
   nextId++;
@@ -65,8 +88,6 @@ export const albumCreate = async (req, res) => {
   };
   // console.log(nextId)
   // console.log(req.body)
-
-  //allAlbum permette di aggiungere l'album creato al db
   let allAlbum = { ...album, ...newAlbum };
 
   await fs.writeFile(DB_PATH_ALBUM, JSON.stringify(allAlbum, null, "  "));
